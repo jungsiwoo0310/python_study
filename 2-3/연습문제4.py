@@ -1,0 +1,12 @@
+print('자동차 유류비 계산기')
+distance = int(input('운행할 거리를 입력해주세요,(단위 : km) '))
+y = float(input('차량의 연비를 입력해주세요,(단위 : km/1)'))
+oil = int(input('기름의 가격을 입력해주세요,(단위 : 원/1)'))
+jr = round(distance / y , 1)
+jb = int(round((distance / y)*oil , 0))
+
+print('distance :' , distance)
+print('y :' , y)
+print('oil :' , oil)
+print('jb :' , jb)
+print('jr :' , jr)
